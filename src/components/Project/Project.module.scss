@@ -1,0 +1,14 @@
+.root {
+  padding: 30px 0;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    height: 440px;
+    width: 700px;
+    object-fit: cover;
+  }
+}
