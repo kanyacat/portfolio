@@ -15,7 +15,7 @@ const Project = ({
 		<li className={styles.root} key={id} style={{ backgroundColor: color }}>
 			<Container>
 				<div className={styles.preview}>
-					<a href={url} target='_blank'>
+					<a className={styles.link} href={url} target='_blank'>
 						<img src={img} alt={name} />
 					</a>
 					<a href={github}>[ Github ]</a>
