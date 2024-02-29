@@ -18,7 +18,9 @@ const Project = ({
 					<a className={styles.link} href={url} target='_blank'>
 						<img src={img} alt={name} />
 					</a>
-					<a href={github}>[ Github ]</a>
+					<a href={github} target={'_blank'}>
+						[ Github ]
+					</a>
 				</div>
 			</Container>
 		</li>
