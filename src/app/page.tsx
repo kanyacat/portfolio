@@ -6,12 +6,10 @@ import axios from 'axios'
 export default async function Home() {
 	const data = await getProjects()
 
-	console.log(data.projects)
-
 	return (
 		<div className={styles.root}>
 			<Main />
-			{data?.projects.map((p: any) => <Project {...p} />)}
+			{data?.projects.map((p: any) => <Project {...p} key={p.id} />)}
 		</div>
 	)
 }
