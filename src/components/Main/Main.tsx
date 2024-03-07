@@ -1,3 +1,5 @@
+'use client'
+
 import styles from './Main.module.scss'
 import GitHubIcon from '@/helpers/icons/github.svg'
 import GmailIcon from '@/helpers/icons/gmail.svg'

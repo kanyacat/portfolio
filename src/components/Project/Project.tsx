@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react'
 import { ProjectProps } from '@/components/Project/Project.props'
 import styles from './Project.module.scss'
 import Container from '@/components/Container/Container'
+import { motion } from 'framer-motion'
 
 const Project = ({
 	id,
@@ -16,11 +19,16 @@ const Project = ({
 			<Container>
 				<div className={styles.preview}>
 					<a className={styles.link} href={url} target='_blank'>
-						<img src={img} alt={name} />
+						<motion.img src={img} alt={name} whileHover={{ scale: 1.03 }} />
 					</a>
-					<a href={github} target={'_blank'} className={styles.git}>
+					<motion.a
+						href={github}
+						target={'_blank'}
+						className={styles.git}
+						whileHover={{ scale: 1.05 }}
+					>
 						GitHub
-					</a>
+					</motion.a>
 				</div>
 			</Container>
 		</li>
