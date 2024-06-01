@@ -25,6 +25,6 @@ async function getProjects() {
 			projects: res.data
 		}
 	} catch (err) {
-		console.log(err)
+		console.log(err) //
 	}
 }
